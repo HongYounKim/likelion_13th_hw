@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <img src = "{% static 'images/logo.png' %}" alt ="logo" width="100px"> 
+    <h1 class="contents">멋쟁이사자처럼 {{week}} 세션 정리</h1>
+
+    <div class="contents">(Django를 중심으로)</div>
+
+    <br><div>가상 웹페이지에 나타내기!</div>
+        <ol>
+            <li>views.py 작성</li>
+            <li>urls.py 작성</li>
+            <li>html 페이지와 연결</li>
+        </ol>
+
+    <p>
+        <div>- template 언어</div>
+            <a>: {{info.template}}</a>
+    </p>
+
+    <p>
+        <div>- static</div>
+        <a>: {{info.static}}</a>
+    </p>
+    
+    <p>
+    <div>{2주차 세션 소감}</div>
+        <ul>
+            <li>vsc 안에서 코드 작성할 때 오타가 매우 중요하다는걸 깨달음...</li>
+        </ul>
+    </p>
+{% endblock %}

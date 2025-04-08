@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <img src = "{% static 'images/logo.png' %}" alt ="logo" width="100px">  
+    <h1 class="contents">This is second page!</h1>
+    <div class="contents">(자기소개를 중심으로)</div>
+    
+    <div>🦁기본 정보🦁 </div>
+        <ol>
+            <li>나이: 05년생</li>
+            <li>생일: 051001</li>
+            <li>가족: 엄마, 아빠, 언니, 오빠, 나</li>
+        </ol>
+    <div>🦁TMI🦁 </div>
+        <ol>
+            <li>취미: 노래 탐색, 공부 브이로그 보기</li>
+            <li>좋아하는 운동: 볼링</li>
+            <li>좋아하는 음식: 면, 해산물</li>
+        </ol>
+
+    <div>만나서 반가워요! 👋🏼</div>
+{% endblock %}
